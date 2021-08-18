@@ -9,7 +9,6 @@ port = 5433
 message = "Hello again, friend of a friend"
 
 try:
-    print(f"Cliente: {message}")
     s.sendto(message.encode(), (host, 5432))
 
     data, server = s.recvfrom(4096)

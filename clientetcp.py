@@ -3,7 +3,7 @@ import sys
 
 def main():
     try:
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # protocolo ip, tcp, protocolo tcp
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # protocolo ipv4, protocolo tcp
     except socket.error as e:
         print("A conexão falhou!")
         print(f"Erro: {e}")
