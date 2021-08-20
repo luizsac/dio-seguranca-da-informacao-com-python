@@ -10,7 +10,7 @@ soup = BeautifulSoup(page, "html.parser")
 # print(soup.prettify())
 
 # o request não retornou o resultado desejado, então... usando o BS para coletar todos os links da página
-with open("links.csv", "w+") as links_file:
+with open("links.txt", "w+") as links_file:
     for link in soup.find_all("a"):
         href = str(link.get("href"))
         if href[:4] == "http":
